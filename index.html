@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #todo{
+            color: green;
+        }
+        h3{
+            text-align: center;
+        }
+        #card{
+            position: absolute;
+            top: 20px;
+            left: 150px;
+        }
+        #text{
+            border-radius:25px ;
+            width: 300px;
+            border:none;
+            outline: none;
+            height: 25px;
+            padding-left:  10px;
+        }
+        #icon{
+            border-radius: 50%;
+            color: white;
+            background-color: green;
+            border:none;
+            height: 25px;
+            width: 25px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        #list{
+            position: relative;
+            top: 20px;
+        }
+        
+        .edit{
+            position:relative;
+            left:50px;
+            color: rgb(27, 231, 27);
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .remove{
+            float: right;
+            color: red;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position:relative;
+        }
+        .name{
+            background: none;
+            border: none;
+            position:relative;
+            /* width: 30px; */
+            color: white;
+            outline: none;
+    
+        }
+
+    </style>
+</head>
+<body>
+    <div id='card'>
+        <h3 ><span id='todo'>TODO</span>List</h3>
+        <input type="text"  id="text" placeholder="What Do You Want to Do...">
+        <button  id='icon' >+</button>
+        <div id='list'>
+            <!-- <div>
+                <input type="text" value="Sport" class="name" disabled> <button class='edit' onclick="edit()">EDIT</button><button class='remove'>REMOVE</button>
+                <hr>
+            </div> -->
+            
+        </div>
+    </div>
+    <script src="todo.js">
+        
+    </script>
+</body>
+</html>
